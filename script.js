@@ -85,3 +85,4 @@
 
         // Initialer Status beim Laden der Seite
         updateStatus();
+
