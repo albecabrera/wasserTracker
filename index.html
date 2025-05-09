@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasser-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wasser-Tracker</h1>
+        <label for="menge">Wie viel Wasser hast du gerade getrunken (in ml)?</label>
+        <input type="number" id="menge" placeholder="z.B. 250">
+        <button onclick="wasserHinzufuegen()">Hinzufügen</button>
+        <button onclick="resetWasser()" class="reset-button">Zurücksetzen</button>
+        <p id="status">Du hast 0 ml von 2000 ml getrunken.</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <h3>Wasser-Statistik</h3>
+        <canvas id="statistikChart" width="300" height="200"></canvas>
+        <p id="durchschnitt"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
